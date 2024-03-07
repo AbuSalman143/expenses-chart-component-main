@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+}
+
+:root{
+   
+    --Soft-red: hsl(10, 79%, 65%);
+    --Soft-red-hover: hsla(10, 79%, 65%, 0.822);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%)
+
+}
+
+body{
+    background: var(--Cream);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container-header{
+    background: var(--Soft-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.blance{
+    color: var(--Very-pale-orange);
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 5% 30px;
+    background: var(--Very-pale-orange);
+   
+    
+}
+.chart-container{
+    display: flex;
+    gap: 20px;
+    min-height: 250px;
+   
+   
+}
+.chart-box{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    min-width: 60px;
+
+}
+.chart-box .day_amount{
+    background: var(--Dark-brown);
+    padding: 5px;
+    border-radius:5px ;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Very-pale-orange);
+}
+.chart{
+    /* border: 2px solid red; */
+    width: 50px;
+    /* height: 100px; */
+    border-radius: 5px;
+    background: var(--Soft-red);
+}
+
+/* for hover efect of amount */
+
+.chart-container .chart-box .day_amount{
+    display: none;
+}
+.chart-container .chart-box:hover .day_amount{
+    display: block;
+}
+p{
+    color: var(--Medium-brown);
+}
+.day{
+    font-size: 14px;
+    color: var(--Medium-brown);
+}
+.container-footer{
+    border-top: 1px solid var(--Medium-brown);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.lastmontvalue{
+    font-weight: 800;
+    text-align: end;
+    color: var(--Dark-brown);
+}
+
+
+
